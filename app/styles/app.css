@@ -1,0 +1,26 @@
+#page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: 50vh;
+
+    background-color: grey;
+}
+
+.card {
+    background-color: rgb(116, 202, 116);
+    width: 35vh;
+    height: 5vh;
+}
+
+.serviceContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    color: white;
+    font-size: 1.8em;
+}
