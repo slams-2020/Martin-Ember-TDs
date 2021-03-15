@@ -1,0 +1,16 @@
+<p>{{this.count}}</p>
+<p>× {{this.multiple}}</p>
+<p>= {{this.total}}</p>
+
+<button type="button" {{on "click" (fn this.change 1)}}>+1</button>
+<button type="button" {{on "click" (fn this.change -1)}}>-1</button>
+<button type="button" {{on "click" this.double}}>Double It</button>
+
+
+<br><br>
+<Textarea @type="text" maxlength="100" cols="80" @value={{this.text}} {{on "keyup" this.countText}}/>
+
+<p>{{this.textLen}}</p>
+<button type="button" {{on "click" this.clear}}>clear</button>
+
+<!-- TODO Afficher les messages d'info, qui change de couleur en fonction du nombre de caractères restant (bleu 100, vert 50, jaune 70, rouge 90) -->
