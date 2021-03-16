@@ -4,23 +4,62 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    flex-direction: column;
-    height: 50vh;
+    background-color: rgb(43, 46, 46);
+}
 
-    background-color: grey;
+#servicesContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(122, 192, 224);
+    padding: 1.75em;
+    border-radius: 0.8em;
+    border: 0.15em white solid;
+}
+h1 {
+    margin: auto;
+    color: white;
+    text-shadow: 0.08em 0.08em 0.08em black;
 }
 
 .card {
-    background-color: rgb(116, 202, 116);
     width: 35vh;
-    height: 5vh;
+    height: 6.5vh;
+    margin: 0.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4em;
+    padding: 1em;
+    font-weight: bolder;
 }
 
-.serviceContent {
-    display: flex;
-    align-items: center;
+#headerCard {
+    background-color: rgb(205, 239, 255);
+    flex-direction: column;
     justify-content: space-around;
     align-content: center;
+    align-items: flex-start;
+    color: rgb(0, 89, 131);
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+#footerCard {
+    background-color: rgb(122, 192, 224);
+    color: rgb(0, 89, 131);
+    border-radius: 0;
+    border: 0;
+    border-top: 0.05em white solid;
     color: white;
-    font-size: 1.8em;
+}
+
+.notSelected {
+    background-color: rgb(159, 160, 159);
+}
+
+.selected {
+    background-color: rgb(120, 212, 108);
 }

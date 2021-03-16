@@ -1,5 +1,22 @@
 <main id="page">
-    <Service />
-    <Service />
-    <Service />
+    <div id="servicesContainer">
+        <h1>Services</h1>
+
+        <div class="card" id="headerCard">
+            <div>Choisissez les services à inclure</div>
+            <div><b>0 services sélectionnés</b></div>
+        </div>
+
+        <div>
+            <Service @name="Web Developement" @price="300" />
+            <Service @name="Design" @price="400" />
+            <Service @name="Integration" @price="250" />
+            <Service @name="Formation" @price="220" />
+        </div>
+
+        <div class="card" id="footerCard">
+            <div>Total :</div>
+            <div><b>{{this.total}} €</b></div>
+        </div>
+    </div>
 </main>

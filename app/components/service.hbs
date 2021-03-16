@@ -1,3 +1,4 @@
-<div class="card">
-    <Service::Content />
+<div class="card {{this.isSelected}}" {{on "click" this.serviceClicked}}>
+    <div>{{@name}}</div>
+    <div>{{@price}}</div>
 </div>
